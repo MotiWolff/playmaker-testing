@@ -1,0 +1,14 @@
+{
+  "version": "8.11.0",
+  "objects": [
+    {
+      "id": "playmaker-dashboard",
+      "type": "dashboard",
+      "attributes": {
+        "title": "Playmaker System Dashboard",
+        "description": "Monitoring dashboard for Playmaker La Liga prediction system",
+        "panelsJSON": "[{\"version\":\"8.11.0\",\"gridData\":{\"x\":0,\"y\":0,\"w\":24,\"h\":15,\"i\":\"1\"},\"panelIndex\":\"1\",\"embeddableConfig\":{\"attributes\":{\"title\":\"System Health Overview\",\"type\":\"lens\",\"visualizationType\":\"lnsDatatable\",\"state\":{\"datasourceStates\":{\"formBased\":{\"layers\":{\"layer1\":{\"columns\":{\"col1\":{\"columnId\":\"col1\",\"operationType\":\"count\",\"isBucketed\":false,\"sourceField\":\"Records\"},\"col2\":{\"columnId\":\"col2\",\"operationType\":\"terms\",\"isBucketed\":true,\"sourceField\":\"service.keyword\"}},\"columnOrder\":[\"col2\",\"col1\"],\"incompleteColumns\":{}}},\"indexPatternId\":\"playmaker-*\"}}},\"layerId\":\"layer1\"},\"references\":[{\"name\":\"kibanaSavedObjectMeta.searchSourceJSON.index\",\"type\":\"index-pattern\",\"id\":\"playmaker-*\"}],\"filters\":[],\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"timeRange\":{\"from\":\"now-1h\",\"to\":\"now\"}}}]"
+      }
+    }
+  ]
+}
