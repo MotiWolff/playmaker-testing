@@ -20,7 +20,7 @@ class DataLoader:
     def __init__(self):
         self.db = next(get_db())
         self.kafka_producer = KafkaProducerClient()
-        self.api_key = os.getenv("FOOTBALL_API_KEY", "2edd2d77128440d686e303c145feeef2")
+        self.api_key = os.getenv("FOOTBALL_API_KEY", "")
         self.logger = get_logger("data-loader")
         
     def load_csv_files(self):
